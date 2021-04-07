@@ -12,14 +12,14 @@ def cancellaSeCe(lista, elem):
         ls2.remove(elem)
     return ls2
 
-if rispostaAffermativa("Ti piacciono i colori? "):
+if rispostaAffermativa("Do you like colors? "):
     daCancellare.append("1.x")
 else:
-    print("\nPer te va bene Windows 1.x")
-    input("\nPremi un tasto per uscire...\n")
+    print("\nFor you, Windows 1.x")
+    input("\nPress a key to exit...\n")
     raise SystemExit
 
-if rispostaAffermativa("Ti piacciono le alte risoluzioni? "):
+if rispostaAffermativa("Do you like high resolutions? "):
     daCancellare.append("1.x")
     daCancellare.append("2.x")
     daCancellare.append("3.x")
@@ -30,7 +30,7 @@ else:
     daCancellare.append("NT 4.x")
     daCancellare.append("2000")
     daCancellare.append("XP")
-if rispostaAffermativa("Ti piace stare a casa? "):
+if rispostaAffermativa("Do you like staying at home? "):
     daCancellare.append("NT 3.x")
     daCancellare.append("NT 4.x")
     daCancellare.append("2000")
@@ -42,10 +42,10 @@ else:
     daCancellare.append("95")
     daCancellare.append("98")
     daCancellare.append("ME")
-if rispostaAffermativa("Ti piace l'idea di lavorare con lo stesso pc a casa e in ufficio? "):
+if rispostaAffermativa("Do you want to work at home and in the office with the same PC? "):
     daCancellare.append("1.x")
     daCancellare.append("2.x")
-    daCancellare.append("3.x non-for workgroups")
+    daCancellare.append("3.x not-for workgroups")
     daCancellare.append("95")
     daCancellare.append("98")
     daCancellare.append("ME")
@@ -56,7 +56,7 @@ if rispostaAffermativa("Ti piace l'idea di lavorare con lo stesso pc a casa e in
 else:
     daCancellare.append("XP")
 
-if rispostaAffermativa("Ti piace l'idea di usare solo quei pochi programmi inclusi con win? "):
+if rispostaAffermativa("Do you use only programs included with Windows, usually? "):
     daCancellare.append("95")
     daCancellare.append("98")
     daCancellare.append("ME")
@@ -69,7 +69,7 @@ else:
     daCancellare.append("3.x non-for workgroups")
     daCancellare.append("NT 3.x")
     daCancellare.append("NT 4.x")
-if rispostaAffermativa("Ti piace il vero MS-DOS? "):
+if rispostaAffermativa("Do you like the original, old Ms-dos (16-bit text mode Microsoft system)? "):
     daCancellare.append("NT 3.x")
     daCancellare.append("NT 4.x")
     daCancellare.append("ME")
@@ -82,7 +82,7 @@ else:
     daCancellare.append("3.x non-for workgroups")
     daCancellare.append("95")
     daCancellare.append("98")
-if rispostaAffermativa("Ti piace la BSoD? "):
+if rispostaAffermativa("Do you like blue screen of death? "):
     daCancellare.append("1.x")
     daCancellare.append("2.x")
     daCancellare.append("3.x for workgroups")
@@ -96,7 +96,7 @@ else:
     daCancellare.append("95")
     daCancellare.append("ME")
 
-print("\nSto elaborando i dati.... ")
+print("\nWorking.... ")
 for vers in daCancellare:
     versioni = cancellaSeCe(versioni, vers)
     time.sleep(0.5)
@@ -104,11 +104,11 @@ for vers in daCancellare:
 print("fatto")
 
 if len(versioni) == 0:
-    print("Mister Gusti Difficili, per te non va bene nulla.")
-    input("\nPremi un tasto per uscire...\n")
+    print("I cannot find the correct version for you. Try Windows 10.")
+    input("\nPress a key to exit...\n")
     raise SystemExit
 else:
-    print("\nPer te vanno bene queste versioni: \n")
+    print("\nVersions: \n")
     for x in versioni: print("Windows "+x)
-    input("\nPremi un tasto per uscire...\n")
+    input("\nPress a key to exit...\n")
     raise SystemExit
