@@ -1,0 +1,4 @@
+You can download Python installer (for Windows, Linux probably contains it after Linux setup) and then download and execute winquiz.py
+You can select to DON'T install python pip, because winquiz don't uses extern libraries.
+
+Enjoy it!
