@@ -99,9 +99,7 @@ else:
 print("\nWorking.... ")
 for vers in daCancellare:
     versioni = cancellaSeCe(versioni, vers)
-    time.sleep(0.5)
-    print("Still working")
-print("fatto")
+print("done")
 
 if len(versioni) == 0:
     print("I cannot find the correct version for you. Try Windows 10.")
